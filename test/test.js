@@ -1,4 +1,4 @@
-let calc=require("./calculator.js")
+let calc=require("../src/calculator.js")
 
 
 let n1=14
