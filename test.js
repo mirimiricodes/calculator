@@ -8,7 +8,7 @@ let n1=14
 let n2=12
 
 function print(operacion, resultado) {
-    console.error(
+    console.log(
         `El resultado ${operacion} de ${n1} y ${n2} es ${resultado}`,
         )
 }
