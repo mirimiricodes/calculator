@@ -1,8 +1,5 @@
-let suma=require("./sum.js")
-let resta=require("./subs.js")
-let multi=require("./multi.js")
-let div=require("./div.js")
-let modulo=require("./mod.js")
+let calc=require("./calculator.js")
+
 
 let n1=14
 let n2=12
@@ -13,11 +10,11 @@ function print(operacion, resultado) {
         )
 }
 
-print(`de la suma`, suma(n1,n2))
-print(`de la resta`, resta(n1,n2))
-print(`de la multiplicación`, multi(n1,n2))
-print(`de la división`, div(n1,n2))
-print(`del resto`, modulo(n1,n2))
+print(`de la suma`, calc.suma(n1,n2))
+print(`de la resta`, calc.resta(n1,n2))
+print(`de la multiplicación`, calc.multi(n1,n2))
+print(`de la división`, calc.div(n1,n2))
+print(`del resto`, calc.modulo(n1,n2))
 
 
 
