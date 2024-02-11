@@ -1,23 +1,6 @@
 let calc=require("../src/calculator.js")
 
-
-let n1=14
-let n2=12
-
-function print(operacion, resultado) {
-    console.log(
-        `El resultado ${operacion} de ${n1} y ${n2} es ${resultado}`,
-        )
-}
-
-// print(`de la suma`, calc.suma(n1,n2))
-// print(`de la resta`, calc.resta(n1,n2))
-// print(`de la multiplicación`, calc.multi(n1,n2))
-// print(`de la división`, calc.div(n1,n2))
-// print(`del resto`, calc.modulo(n1,n2))
-
 function assertEquals(description, input, expected) {
-
     if (input==expected) {
         console.log(`${description}: OK!`)
     }
@@ -25,6 +8,7 @@ function assertEquals(description, input, expected) {
         console.log(`${description}: ERROR!`)
     }
 }
+
 assertEquals("Suma 1 y 1", calc.suma(1,1), 2)
 assertEquals("Suma 30 y 4", calc.suma(30,4), 34) 
 assertEquals("Resta 6 y 2", calc.resta(6,2), 4)
