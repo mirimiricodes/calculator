@@ -57,6 +57,9 @@ describe("calculator test", () => {
         it("should handle non numeric values", () => {
             assert.equal(calc.div(4, "not a number"), "not valid number")
         })
+        it("should divide 10 by 0", () => {
+            assert.equal(calc.div(10, 0), "can't be divided by 0")
+        })
     })
 
     describe("module test", () => {
