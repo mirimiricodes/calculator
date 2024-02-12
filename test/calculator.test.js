@@ -13,7 +13,6 @@ describe("calculator test", () => {
 
         it("should handle non numeric values", () => {
             assert.equal(calc.suma(4, "not a number"), "not valid number")
-
         })
 
     })
@@ -41,6 +40,9 @@ describe("calculator test", () => {
         it("should multiply 7 and 6", () => {
             assert.equal(calc.multi(7, 6), 42)
         })
+        it("should handle non numeric values", () => {
+            assert.equal(calc.multi(4, "not a number"), "not valid number")
+        })
 
     })
 
@@ -52,6 +54,9 @@ describe("calculator test", () => {
         it("should divide 10 by 2", () => {
             assert.equal(calc.div(10, 2), 5)
         })
+        it("should handle non numeric values", () => {
+            assert.equal(calc.div(4, "not a number"), "not valid number")
+        })
     })
 
     describe("module test", () => {
@@ -62,7 +67,9 @@ describe("calculator test", () => {
         it("should give remainder of 7 by 2", () => {
             assert.equal(calc.modulo(7, 2), 1)
         })
-
+        it("should handle non numeric values", () => {
+            assert.equal(calc.modulo(4, "not a number"), "not valid number")
+        })
     })
 
 })
