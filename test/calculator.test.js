@@ -11,7 +11,7 @@ describe("calculator test", () => {
             assert.equal(calc.suma(4, -4), 0)
         })
 
-        it("xxx", () => {
+        it("should handle non numeric values", () => {
             assert.equal(calc.suma(4, "not a number"), "not valid number")
 
         })
@@ -27,6 +27,10 @@ describe("calculator test", () => {
             assert.equal(calc.resta(5, 3), 2)
         })
 
+        it("should handle non numeric values", () => {
+            assert.equal(calc.resta(4, "not a number"), "not valid number")
+
+        })
     })
 
     describe("multiplication test", () => {
