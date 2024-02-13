@@ -5,20 +5,19 @@ let div = require("./div.js")
 let modulo = require("./mod.js")
 
 function decideOperation(operation, n1, n2) {
-    if (operation == "s") {
-        return suma(n1, n2)
-    }
-    else if (operation == "r") {
-        return resta(n1, n2)
-    }
-    else if (operation == "m") {
-        return multi(n1, n2)
-    }
-    else if (operation == "d") {
-        return div(n1, n2)
-    }
-    else if (operation == "mo") {
-        return modulo(n1, n2)
+    switch (operation) {
+        case "s":
+            return suma(n1, n2)
+        case "r":
+            return resta(n1, n2)
+        case "m":
+            return multi(n1, n2)
+        case "d":
+            return div(n1, n2)
+        case "mo":
+            return modulo(n1, n2)
+        default:
+            throw new Error("unknown operation")
     }
 }
 
