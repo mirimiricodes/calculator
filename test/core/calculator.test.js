@@ -1,4 +1,4 @@
-let calc = require("../src/calculator")
+let calc = require("../../src/core/calculator")
 let assert = require("assert")
 
 describe("calculator test", () => {
