@@ -4,11 +4,13 @@
   "description": "",
   "main": "src/calculator.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node src/ui/terminal.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^10.3.0"
+    "mocha": "^10.3.0",
+    "readline-sync": "^1.4.10"
   }
 }
