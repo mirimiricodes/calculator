@@ -28,6 +28,8 @@ function computeResult(userSelection, userN1, userN2) {
             return calc.multi(userN1, userN2)
         case "4":
             return calc.div(userN1, userN2)
+        case "5":
+            return calc.modulo(userN1, userN2)
     }
 }
 
@@ -46,8 +48,11 @@ function showChosenOperation(userSelection) {
         case "4":
             console.log("Looks like you want to divide...")
             break
+        case "5":
+            console.log("Let's get a remainder!")
+            break
         default:
-            "Choose an operation (1, 2, 3 or 4)"
+            "Choose an operation (1, 2, 3, 4 or 5)"
     }
 }
 
@@ -70,6 +75,7 @@ function renderMenu() {
     console.log("2. SUBSTRACTION")
     console.log("3. MULTIPLICATION")
     console.log("4. DIVISION")
+    console.log("5. MODULE")
     console.log("")
 }
 
