@@ -2,6 +2,7 @@ let calc = require("../core/calculator")
 let readline = require("readline-sync")
 
 function render() {
+    printWelcome()
     renderMenu()
     let userSelection = readline.question()
     showChosenOperation(userSelection)
@@ -12,7 +13,9 @@ function render() {
 }
 
 function showResult(result) {
-    console.log(result)
+    console.log()
+    console.log("Your result is:", result)
+    console.log()
 }
 
 function computeResult(userSelection, userN1, userN2) {
@@ -29,6 +32,7 @@ function computeResult(userSelection, userN1, userN2) {
 }
 
 function showChosenOperation(userSelection) {
+    console.log()
     switch (userSelection) {
         case "1":
             console.log("Great! You chose an addition!")
@@ -49,8 +53,10 @@ function showChosenOperation(userSelection) {
 
 
 function chooseNumbers() {
+    console.log()
     console.log("# Choose 1st number:")
     let userN1 = readline.questionInt()
+    console.log()
     console.log("# Choose 2nd number:")
     let userN2 = readline.questionInt()
     return { userN1, userN2 }
@@ -67,6 +73,9 @@ function renderMenu() {
     console.log("")
 }
 
-console.log("Welcome to Mirimiri's first calculator!")
-console.log("")
+function printWelcome() {
+    console.log("Welcome to Mirimiri's first calculator!")
+    console.log()
+}
+
 render()
