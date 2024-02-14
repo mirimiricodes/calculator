@@ -43,7 +43,6 @@ function safeMulti(n1, n2) {
 }
 
 function safeDiv(n1, n2) {
-    // Si n2 es 0, devuelve mensaje; si no, return so
     if (n2 == 0) {
         return "can't be divided by 0"
     }
